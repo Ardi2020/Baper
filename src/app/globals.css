@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 /* Baper Design System — Dark Mode Default with Crimson/Gold accents */
 :root {
@@ -47,4 +48,105 @@ html {
 ::selection {
   background: var(--accent-crimson);
   color: #ffffff;
+}
+
+/* Article prose styles */
+.article-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ededed;
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+}
+
+.article-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ededed;
+}
+
+.article-content h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFD700;
+}
+
+.article-content p {
+  margin-bottom: 1.25rem;
+  line-height: 1.85;
+  color: #a0a0a0;
+}
+
+.article-content strong {
+  color: #ededed;
+  font-weight: 600;
+}
+
+.article-content em {
+  color: #c0c0c0;
+}
+
+.article-content ul,
+.article-content ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+  color: #a0a0a0;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.article-content ul li {
+  list-style-type: disc;
+}
+
+.article-content ol li {
+  list-style-type: decimal;
+}
+
+.article-content blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #DC143C;
+  background: #141414;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+.article-content blockquote p {
+  margin-bottom: 0;
+}
+
+.article-content a {
+  color: #FFD700;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.article-content a:hover {
+  border-bottom-color: #FFD700;
+}
+
+.article-content hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #222;
+}
+
+.article-content code {
+  background: #1a1a1a;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+  color: #FFD700;
 }

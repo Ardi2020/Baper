@@ -75,7 +75,7 @@ export default async function TulisanPage({
 
       {/* Content */}
       <div
-        className="prose prose-invert prose-headings:font-[var(--font-heading)] prose-headings:text-[#ededed] prose-p:text-[#a0a0a0] prose-p:leading-relaxed prose-a:text-[#FFD700] prose-a:no-underline hover:prose-a:text-[#FFE44D] prose-strong:text-[#ededed] prose-blockquote:border-[#DC143C] prose-blockquote:text-[#a0a0a0] max-w-none"
+        className="article-content"
         dangerouslySetInnerHTML={{ __html: tulisan.contentHtml }}
       />
 
