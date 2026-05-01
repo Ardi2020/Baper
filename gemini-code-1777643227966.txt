@@ -1,0 +1,26 @@
+ACT AS: Senior Fullstack Engineer & UI/UX Architect
+CONTEXT: Refer to **context7** for all coding patterns and logic references.
+PRE-REQUISITES: 
+1. Check if the required **MCP Servers** are installed (especially for Vercel/Netlify environments if applicable). If not, install them immediately.
+2. Run `git init` and create an initial commit if this is a new directory. Ensure `.gitignore` is properly configured (node_modules, .next, .env, dist).
+
+TASK: Execute Chunk 1 and Chunk 2 for the "Baper" (Bicara Politik dan Peradaban) Static Website.
+
+TECH STACK: Next.js 14/15 (App Router), Tailwind CSS, Framer Motion, TypeScript, MDX.
+ARCHITECTURAL RULES:
+- Use Modular approach. Follow the atomic design principles.
+- Configure `next.config.mjs` strictly for STATIC SITE EXPORT (`output: 'export'`) optimized for Netlify. Create a `netlify.toml` file for deployment configurations.
+- Create the mandatory `/ui-ux-pro-max` directory at the root. All global components, design tokens (colors, typography), and Framer Motion configurations MUST reside here.
+- Save progress to the repository (`git add .` & `git commit`) after every successful feature implementation.
+
+EXECUTION STEPS:
+1. Initialize the Next.js project with TypeScript and Tailwind CSS.
+2. Configure `next.config.mjs` for static export and ensure image optimization settings are compatible with static hosting (e.g., use unoptimized: true if required by Netlify).
+3. Create the `/ui-ux-pro-max` directory. Inside it, define the Design System:
+   - Configure Tailwind for a "Dark Mode Default" theme with high-contrast accents (Crimson/Gold).
+   - Set up two primary fonts: A Serif font for headings (intellectual/editorial vibe) and a Sans-Serif font for body text.
+   - Setup a base Framer Motion wrapper component for page transitions.
+4. Build the core layout in `app/layout.tsx` incorporating a minimalist Navbar and Footer.
+5. Build the landing page (`app/page.tsx`) using a modern "Bento Grid" layout placeholder that will soon house YouTube embeds, TikTok embeds, and latest writings.
+6. Verify the build locally using `npm run build` to ensure the static export works flawlessly without server-side dependencies.
+7. Run a final git commit with the message "feat(core): init next.js static export with ui-ux-pro-max foundation".
