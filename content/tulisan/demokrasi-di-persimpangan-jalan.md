@@ -4,7 +4,7 @@ excerpt: "Mengamati evolusi demokrasi di era digital dan tantangan baru yang dih
 category: "Politik"
 date: "2026-04-28"
 image: ""
-featured: true
+featured: false
 ---
 
 ## Pendahuluan
