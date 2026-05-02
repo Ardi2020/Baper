@@ -9,6 +9,7 @@ import {
 } from "@/ui-ux-pro-max/motion-config";
 import Link from "next/link";
 import YouTubeEmbed from "./youtube-embed";
+import TikTokEmbed from "./tiktok-embed";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -166,20 +167,12 @@ export default function BentoGrid({ tulisan, videos }: Props) {
             </BentoCard>
           ))}
 
-          {/* TikTok */}
-          <BentoCard className="col-span-1 row-span-1 flex flex-col items-center justify-center gap-3">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"
-                stroke="#FFD700"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <p className="text-sm font-medium text-[#ededed]">TikTok</p>
-            <p className="text-xs text-[#666]">60 Detik Politik</p>
-          </BentoCard>
+          {/* TikTok Embed - latest video */}
+          {videos.filter(v => v.platform === "TikTok").slice(0, 1).map((v) => (
+            <BentoCard key={v.slug} className="col-span-1 row-span-1 sm:col-span-1 overflow-hidden p-0">
+              <TikTokEmbed url={v.url} title={v.title} />
+            </BentoCard>
+          ))}
 
           {/* Stats */}
           <BentoCard className="col-span-1 row-span-1 flex flex-col justify-between">
