@@ -317,8 +317,7 @@ export default function BentoGrid({ tulisan, videos }: Props) {
             BAPER — Bicara Politik &amp; Peradaban — adalah platform editorial
             independen yang berdedikasi untuk menyajikan wacana intelektual
             tentang politik, peradaban, dan gagasan besar yang membentuk
-            Indonesia dan dunia. Kami percaya bahwa pikiran yang tajam adalah
-            fondasi demokrasi yang sehat.
+            Indonesia dan dunia.
           </p>
         </div>
       </section>
